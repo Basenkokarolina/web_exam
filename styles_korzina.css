@@ -1,0 +1,169 @@
+.food-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.select-order, .data-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.no-items {
+    text-align: center;
+    display: none;
+    width: 80%;
+}
+
+select, form input[type="text"], form input[type="date"], input[type="email"], input[type="tel"], input[type="time"], textarea{
+    min-width: 200px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.data, .delivery-address label {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 7px;
+}
+
+.order-items {
+    display: none;
+    font-size: 1.2em;
+}
+
+.order-items div {
+    margin-bottom: 20px;
+}
+
+.order-items .coast{
+    font-size: 1.2em;
+}
+
+.order-items p{
+    margin-bottom: 3px;
+}
+
+.order-items-not {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin:10px 0 20px 0;
+}
+
+.comment{
+    margin-bottom: 7px;
+}
+
+.addition, .delivery-radio-time, legend {
+    margin-bottom: 12px;
+}
+
+.delivery-radio-time{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.delivery-time-current {
+    margin-top: 5px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.delivery-address p, .delivery-time-current p{
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.delivery-address input, .delivery-time-current input{
+    margin-bottom: 0;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 5px;
+    padding: 0;
+
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 3px;
+}
+
+.button {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 50%;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    border: 1px solid #000;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gold;
+    border-color: tomato;
+}
+
+@media all and (max-width: 1200px) {
+
+}
+
+@media all and (max-width: 1000px) {
+    .food-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 700px) {
+
+}
+
+@media all and (max-width: 650px) {
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+}

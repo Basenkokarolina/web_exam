@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="styles_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>OZON</title>
+</head>
+<body>
+<header>
+    <img class="logo-head" src="images/logo_ozon.png" alt="logo">
+    <div class="search-box">
+        <input type="text" placeholder="Введите запрос" class="search-input">
+        <button class="search-button">Найти</button>
+        <div class="header-icons">
+            <a href="korzina.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                    <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
+                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
+                </svg>
+            </a>
+            <a href="profile.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+</header>
+<div class="popup">
+</div>
+<main>
+    <div class="main-c">
+        <div class="left-x">
+            <h3>Категория</h3>
+            <input type="checkbox" id="kat1" name="kat1" checked />
+            <label for="kat1">Категория 1</label><br>
+
+            <input type="checkbox" id="kat2" name="kat2" checked />
+            <label for="kat2">Категория 2</label><br>
+
+            <input type="checkbox" id="kat3" name="kat3" checked />
+            <label for="kat3">Категория 3</label><br>
+
+            <input type="checkbox" id="kat4" name="kat4" checked />
+            <label for="kat4">Категория 4</label><br>
+
+            <input type="checkbox" id="kat5" name="kat5" checked />
+            <label for="kat5">Категория 5</label>
+            <h3>Стоимость</h3>
+            <div class="cost">
+                <div class="cost-x">
+                    <p>От</p>
+                    <input type="number" id="num_ot" name="kat1" checked />
+                </div>
+                <div class="cost-x">
+                    <p>До</p>
+                    <input type="number" id="num_do" name="kat1" checked />
+                </div>
+            </div>
+            <input type="checkbox" id="sales" name="sales" checked />
+            <label for="sales">Только товары со скидками</label><br>
+            <button>Применить</button>
+        </div>
+        <div class="right-x">
+            <div class="header-make-order">
+                <h3>Каталог</h3>
+                <select name="filter" id="filter">
+                    <option value="rating_asc">По возрастанию рейтинга</option>
+                    <option value="rating_desc">По убыванию рейтинга</option>
+                    <option value="price_asc">По возрастанию цены</option>
+                    <option value="price_desc">По убыванию цены</option>
+                </select>
+            </div>
+            <div class="food-grid">
+            </div>
+            <button class="load-more">Загрузить ещё</button>
+        </div>
+    </div>
+</main>
+<footer id="contacts">
+    <div class="text">
+        <p>
+            Позвонить нам <a href="+7-000-000-00-00">+7-000-000-00-00</a>
+        </p>
+    </div>
+</footer>
+
+<script type="module" src="scripts_index.js"></script>
+
+</body>
+</html>
