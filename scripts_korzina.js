@@ -72,7 +72,7 @@ async function submitForm() {
 
     try {
         const response = await
-        fetch(`https://edu.std-900.ist.mospolytech.ru//exam-2024-1/api/orders${key}`, {
+        fetch(`https://edu.std-900.ist.mospolytech.ru/exam-2024-1/api/orders${key}`, {
             method: "POST",
             body: formData
         });
@@ -88,7 +88,7 @@ async function submitForm() {
         const foodGrid = document.querySelector(".food-grid");
         const form = document.querySelector("form");
         showPopup("Заказ успешно создан");
-        notItems.style.display = "flex";
+        notItems.style.display = "block";
         foodGrid.style.display = "none";
         form.style.display = "none";
 

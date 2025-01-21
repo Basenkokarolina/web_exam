@@ -51,6 +51,53 @@
         </tbody>
     </table>
 </main>
+<!-- Модальное окно: Просмотр заказа -->
+<div class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Просмотр заказа</h2>
+            <span class="close" onclick="closeModal('modalView')">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p><strong>Дата оформления:</strong> 23.11.2024 20:01</p>
+            <h3>Доставка</h3>
+            <p><strong>Имя получателя:</strong> Иванов Иван Иванович</p>
+            <p><strong>Адрес доставки:</strong> г. Москва, ул. Большая Семёновская, 38</p>
+            <p><strong>Время доставки:</strong> 21:00</p>
+            <p><strong>Телефон:</strong> +74952230523</p>
+            <p><strong>Email:</strong> example@mospolytech.ru</p>
+            <h3>Комментарий</h3>
+            <p>Позвонить от поста охраны.</p>
+            <h3>Состав заказа</h3>
+            <p>Основное блюдо: Жареная картошка с грибами (150Р)</p>
+            <p>Напиток: Зелёный чай (100Р)</p>
+            <p>Десерт: Чизкейк (240Р)</p>
+            <p><strong>Стоимость:</strong> 490Р</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-secondary" onclick="closeModal('modalView')">ОК</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Модальное окно: Удаление заказа -->
+<div id="modalDelete" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Удаление заказа</h2>
+            <span class="close" onclick="closeModal('modalDelete')">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Вы уверены, что хотите удалить заказ?</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-secondary" onclick="closeModal('modalDelete')">Отмена</button>
+            <button class="btn-danger">Да</button>
+        </div>
+    </div>
+</div>
+
 <footer id="contacts">
     <div class="text">
         <p>
